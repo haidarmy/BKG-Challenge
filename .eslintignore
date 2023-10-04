@@ -1,0 +1,6 @@
+index.js
+babel.config.js
+react-native.config.js
+.eslintrc.js
+**/*.config.js
+**/*.test.tsx
