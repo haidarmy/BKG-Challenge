@@ -1,11 +1,14 @@
-import React, {Fragment} from 'react';
-import {PaymentDetailsScreen} from './pages';
+import React from 'react';
+import 'react-native-gesture-handler';
+import {Provider} from 'react-redux';
+import RootStack from '@navigations/RootStack';
+import store from '@redux/store';
 
 const App = () => {
   return (
-    <Fragment>
-      <PaymentDetailsScreen />
-    </Fragment>
+    <Provider store={store}>
+      <RootStack />
+    </Provider>
   );
 };
 

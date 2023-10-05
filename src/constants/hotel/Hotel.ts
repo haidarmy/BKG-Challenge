@@ -1,0 +1,57 @@
+import {HotelInfo} from '@types';
+
+export const HOTEL_INFO_INIT_VALUE: HotelInfo = {
+  chosen_hotel_detail: {
+    address: '',
+    descriptions: [{description: '', title: ''}],
+    facilities: [''],
+    hotel_name: '',
+    images: [{thumbnail: '', title: '', url: ''}],
+    is_recommended: false,
+    latitude: 0,
+    longitude: 0,
+    phone: '',
+    region_hotel: '',
+    star: 0,
+    zip: '',
+  },
+  chosen_hotel_room: {
+    avail_sply: '',
+    hotel_sply: '',
+    hotel_room_type_selected: '',
+    meal: '',
+    meal_code: '',
+    region: '',
+    room_grade: '',
+    room_name: '',
+    sply_code: '',
+    vendor_code: '',
+  },
+  chosen_hotel_params: {
+    check_in: '',
+    check_out: '',
+    guest_adult: 0,
+    guest_children: 0,
+    guest_children_ages: [0],
+    guest_infant: 0,
+    hotel_code: '',
+    hotel_name: '',
+    total_room: 0,
+  },
+  chosen_hotel_prices: {
+    cxl_policies: [
+      {
+        cxl_end_date: '1970-01-01' as unknown as Date,
+        cxl_fee: 0,
+        cxl_remark: '',
+        cxl_start_date: '1970-01-01' as unknown as Date,
+      },
+    ],
+    discount_description: '',
+    important_informations: [{info: ''}],
+    is_refundable: false,
+    precode_book: '',
+    price_detail: {corporate_fee: 0, currency: '', discount_price: 0, origin_total: 0, total: 0},
+  },
+  chosen_hotel_expired: '1970-01-01' as unknown as Date,
+};

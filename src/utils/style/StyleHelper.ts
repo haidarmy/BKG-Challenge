@@ -24,14 +24,3 @@ export const fontSize: TextTypeMap<number> = {
   small: 13,
   tiny: 12,
 };
-export const lineHeight: TextTypeMap<number> = {
-  title_x: 80,
-  title_1: 34,
-  title_2: 22,
-  title_3: 22,
-  regular_1: 19,
-  regular_2: 19,
-  regular_3: 18,
-  small: 16,
-  tiny: 12,
-};

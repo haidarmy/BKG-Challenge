@@ -16,6 +16,8 @@ module.exports = {
           '@services': './src/services',
           '@types': './src/types',
           '@utils': './src/utils',
+          '@i18n': './src/i18n',
+          '@redux': './src/redux',
         },
       },
     ],
