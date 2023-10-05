@@ -70,7 +70,9 @@ const AddGuestData = () => {
   }, []);
 
   const handleSubmitInput = useCallback(() => {
-    dispatch(editGuest(inputs as GuestData[]));
+    const newData = [...inputs].filter(input => input.name.length);
+    dispatch(editGuest(newData));
+
     navigation.replace('PaymentDetails');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputs]);
