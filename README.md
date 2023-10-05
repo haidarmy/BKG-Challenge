@@ -1,8 +1,11 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+
+## Step 0: Setup the Project Env
+
+The project has already been set with the required credentials and keys using `.env` files. You can also set your own keys and credentials in the same files.
+See the `.env.example` file for the example.
 
 ## Step 1: Start the Metro Server
 
@@ -58,6 +61,17 @@ Now that you have successfully run the app, let's modify it.
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
+
+## Gallery
+|   |   |
+|---|---|
+|![Screenshot_1696539000](https://github.com/haidarmy/BKG-Challenge/assets/39584334/3859a254-1a18-460e-9416-528f0f357151)| ![Screenshot_1696539017](https://github.com/haidarmy/BKG-Challenge/assets/39584334/94031cf6-f6a7-406a-8907-bf2b524bb209) |
+|![Screenshot_1696539026](https://github.com/haidarmy/BKG-Challenge/assets/39584334/22507861-0b8c-4b0e-b69e-b8e655e844d6) | ![Screenshot_1696539207](https://github.com/haidarmy/BKG-Challenge/assets/39584334/ea7976a7-4bac-4d3a-958a-b1bb9c058da5) | 
+
+
+
+
+
 
 ### Now what?
 
