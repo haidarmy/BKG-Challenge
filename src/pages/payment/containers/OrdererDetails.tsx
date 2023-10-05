@@ -9,7 +9,7 @@ import GuestDataList from './GuestDataList';
 
 const OrdererDetails = () => {
   const {user} = useAppSelector(state => state.orderer);
-  const [selectedRadio, setSelectedRadio] = useState<string | undefined>();
+  const [selectedRadio, setSelectedRadio] = useState<string | undefined>('1');
 
   const renderOrdererInfo = useMemo(
     () => (

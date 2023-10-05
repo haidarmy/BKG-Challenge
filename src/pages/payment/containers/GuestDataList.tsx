@@ -16,7 +16,7 @@ const GuestDataList = () => {
   const [showAllGuestData, setShowAllGuestData] = useState(3);
 
   const handleGuestData = useMemo(
-    () => guestData.slice(0, showAllGuestData),
+    () => [...guestData].reverse().slice(0, showAllGuestData),
     [guestData, showAllGuestData],
   );
 

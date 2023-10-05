@@ -1,6 +1,7 @@
-import React, {useCallback, useId, useMemo, useState} from 'react';
+import React, {useCallback, useMemo, useState} from 'react';
 import {Dimensions, StyleSheet, View, TouchableOpacity} from 'react-native';
 import SelectDropdown, {SelectDropdownProps} from 'react-native-select-dropdown';
+import uuid from 'react-native-uuid';
 import Icon from 'react-native-vector-icons/Feather';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import {Button, Gap, Header, Input, Text} from '@components';
@@ -34,13 +35,14 @@ const AddGuestData = () => {
 
   const [inputs, setInputs] = useState(guest);
   const dispatch = useAppDispatch();
-  const uid = useId();
+
+  const id = uuid.v4() as string;
 
   const handleAddInput = useCallback(() => {
     const newInput = [...inputs];
-    newInput.push({id: uid, prefix: 'Tn.', name: '', isChosen: false});
+    newInput.push({id, prefix: 'Tn.', name: '', isChosen: false});
     setInputs(newInput);
-  }, [inputs, uid]);
+  }, [id, inputs]);
 
   const handleRemoveInput = useCallback(
     (index: number) => {
